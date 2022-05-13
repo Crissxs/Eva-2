@@ -1,0 +1,193 @@
+*{
+    font-family: 'Patrick Hand', cursive;
+    padding: 0;
+    margin: 0;
+}
+#header {
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    transition-duration: 0.5s;
+}
+#logo{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+#menu>a{
+    margin-left:40px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding-bottom: 17px;
+}
+#menu>a:hover{
+    border-bottom: cyan solid;
+}
+#search{
+    display: flex;
+    justify-content: right;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5%;
+  }
+  #search input{
+    display: flex;
+    width: 400px;
+    font-size: 20px;
+    overflow: hidden;
+  }
+  
+  
+#barrita{
+    border-bottom: #FFC12E solid;
+}
+#redes{
+    display: flex;
+    justify-content: center;
+}
+.red{
+    align-items: center;
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+.red:hover{
+    background:linear-gradient(to right, #fff4bc 0%, #ffd9c1 100%);
+    transition-duration: 0.5s;
+}
+
+#Puf{
+   padding-top: 20px;
+   display: flex;
+}
+#Puf>p{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+#Fuente>p{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#Fuente{
+    padding-top: 20px;
+    display: flex;
+
+}
+
+#Pagar{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+#cuerpo{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 80vh;
+    background: linear-gradient(to bottom, #FFBA92 0%, #feee92 100%);
+}
+
+#fondo_carrito{
+    background-color: rgba(240, 248, 255, 0.930);
+    margin: 30px 30px 30px 30px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#space{
+    display: flex;
+    height: 0px;
+}
+
+.titulo{        
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+}
+.titulo>p{
+    display: flex;
+    justify-content: center;
+    padding-left: 300px;
+}
+#carrito_left{
+    padding: 10px 20px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+#carrito_right{
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+#carrito_right>p{
+    display: flex;
+    width: max-content;
+}
+
+#lista_venta{    
+    display: flex;
+    flex-direction: column;   
+    
+}
+
+.descripcion{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+.short{
+    display: flex;
+    padding-left: 28px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+    padding: 0px 0px 0px 0px;    
+}
+
+.info{
+    padding-left: 20px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resumen_compra{
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    border-top: 0px;
+    border-bottom: 1px solid black;
+}
+#sidehr{
+    margin:0;
+    border-left: 1px dotted #333333;
+    border-right: 0px;
+
+}
+#lista_venta>hr{ 
+    border-top: 2px dotted #333333;
+    border-bottom: 0px;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}

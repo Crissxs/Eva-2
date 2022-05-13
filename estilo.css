@@ -1,0 +1,168 @@
+* {
+  border: #333;
+  font-family: 'Patrick Hand', cursive;
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+body>hr{
+  border-top: 0px;
+  border-bottom: 1px solid black;
+  margin: 0;
+  opacity: 100;
+
+}
+
+#header {
+  height: 58px;
+  display: flex;
+  transition-duration: 0.5s;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333333;
+  padding-left: 0;
+  flex-flow: nowrap;
+  
+}
+
+#header>a {
+  flex-flow: row, nowrap;
+  
+}
+#search{
+  display: flex;
+  justify-content: right;
+  width: 400px;
+  overflow: hidden;
+}
+#search input{
+  display: flex;
+  width: 400px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+#search{
+  display: flex;
+  justify-content: right;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 1%;
+}
+#search input{
+  display: flex;
+  width: 400px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+#logo {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#logo>a {
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  justify-content: space-around;
+}
+#menu{
+  flex-wrap: nowrap;
+}
+#menu>a {
+  margin-left: 40px;
+  color: whitesmoke;
+  text-decoration: none;
+  padding-bottom: 17px;
+
+}
+
+#menu>a:hover {
+  border-bottom: cyan solid;
+}
+
+#barrita {
+  border-bottom: #FFC12E solid;
+}
+
+#redes {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  color: whitesmoke;
+}
+
+.red {
+  align-items: center;
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.red>a{
+  color: black;
+}
+
+.red:hover {
+  background: linear-gradient(to right, #e3b6b6 0%, #edad92 100%);
+  transition-duration: 0.5s;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.navbar {
+  height: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: fixed;
+  background-color: #333;
+  transition-duration: 0.5s;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+  padding: 0;
+  
+}
+
+.navbar>a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#cuerpo{
+  background-image: url(images/fondo.jpg);
+  display: flex;
+  height: 110vh;
+  justify-content: center;
+}
+
+#carouselcontroll{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 333px;
+  margin-top: 100px;
+  position: absolute;
+}
+#carouselExampleControls{
+  border-style: solid;
+  border-width: auto 5px;
+  border-radius: 1%;
+}

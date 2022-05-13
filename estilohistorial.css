@@ -1,0 +1,130 @@
+* {
+    font-family: 'Patrick Hand', cursive;
+    padding: 0;
+    margin: 0;
+}
+#search{
+    display: flex;
+    justify-content: right;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5%;
+  }
+  #search input{
+    display: flex;
+    width: 400px;
+    font-size: 20px;
+    overflow: hidden;
+  }
+  
+#header {
+    height: 59px;
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    transition-duration: 0.5s;
+}
+
+#logo {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#menu>a {
+    margin-left: 40px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding-bottom: 17px;
+}
+
+#menu>a:hover {
+    border-bottom: cyan solid;
+}
+
+#barrita {
+    border-bottom: #FFC12E solid;
+}
+
+#redes {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    align-items: center;
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.red:hover {
+    background: linear-gradient(to right, #ecc9c9 0%, #d3efe5 100%);
+    transition-duration: 0.5s;
+}
+
+#productos {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+#cuerpo {
+    display: flex;
+    background: linear-gradient(to bottom, #97c7b8 0%, #db9696 100%);
+    justify-content: center;
+    align-items: flex-start ;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+#fondo_historial {
+    background-color: rgba(240, 248, 255, 0.966);
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.titulo{        
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+}
+.descripcion{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.descripcion>div{
+    display: flex;
+    flex-direction: column;
+
+}
+.descripcion>div>a{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+hr {
+    border-top: 0px;
+    border-bottom: 1px solid black;
+}
+#productos>hr{ 
+    border-top: 2px dotted #333333;
+    border-bottom: 0px;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}

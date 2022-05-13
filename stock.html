@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Stock de Productos</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+	<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="static/css/crud.css" th:href="@{/css/crud.css}">
+
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="estilostock.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			//Asegurate que el id que le diste a la tabla sea igual al texto despues del simbolo #
+			$('#userList').DataTable();
+		});
+	</script>
+</head>
+
+<body>
+	<body>
+		<div id="header">
+			<div id="menu">
+				<a href="catalogo.html">Catálogo</a>
+				<a href="carrito.html">Carrito</a>
+				<a href="historial.html">Historial de Compras</a>
+				<a href="descuentos.html">Descuentos</a>
+				<a id="barrita" href="#">Stock</a>
+				<a href="crudproductos.html">Crud</a>
+				<a href="perfil.html">Mi Perfil</a>
+			</div>
+			<div id="search">
+				<input type="text" placeholder="Buscar.." name="buscar">
+			</div>  
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.png" alt="Pets"></a>
+			</div>
+		</div>
+		<hr id="separador">
+		<div id="redes">
+			<div class="red">
+				<img src="images/icons8_subscribe_25px.png" alt="">
+				<a href="subscripcion.html">SUBSCRIBIRSE!</a>
+			</div>
+			<div class="red">
+				<img src="images/icons8_facebook_25px.png" alt="">
+				<a href="https://es-la.facebook.com/">FACEBOOK</a>
+			</div>
+			<div class="red">
+				<img src="images/icons8_instagram_logo_25px.png" alt="">
+				<a href="https://www.instagram.com/">INSTAGRAM</a>
+			</div>
+			<div class="red">
+				<img src="images/icons8_twitter_squared_25px.png" alt="">
+				<a href="https://twitter.com/home?lang=es">TWITTER</a>
+			</div>
+			<div class="red">
+				<img src="images/icons8_whatsapp_25px.png" alt="">
+				<a href="https://web.whatsapp.com/">WHATSAPP</a>
+			</div>
+		</div>
+		<hr id="separador">
+	<div class="container">
+		<div class="mx-auto col-sm-8 main-section" id="myTab" role="tablist">
+			<ul class="nav nav-tabs justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link active" id="list-tab" data-toggle="tab" href="#list" role="tab"
+						aria-controls="list" aria-selected="false">Listas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form"
+						aria-selected="true">Agregar</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+					<div class="card">
+						<div class="card-header">
+							<h4>Stock</h4>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table id="userList" class="table table-bordered table-hover table-striped">
+									<thead class="thead-light">
+										<tr>
+											<th scope="col">Cod Producto</th>
+											<th scope="col">Nombre</th>
+											<th scope="col">Stock</th>
+											<th scope="col">Precio</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>Desorante Para Macotas</td>
+											<td>4</td>
+											<td>$15.990</td>
+											<td>
+												<a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+														class="fas fa-user-times"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>Contenededor de comida</td>
+											<td>6</td>
+											<td>$16.990</td>
+											<td>
+												<a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+														class="fas fa-user-times"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>Cepillo De pelo Para mascotas</td>
+											<td>2</td>
+											<td>$11.990</td>
+											<td>
+												<a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+														class="fas fa-user-times"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">4</th>
+											<td>Cama Para Gatos</td>
+											<td>9</td>
+											<td>$16.000</td>
+											<td>
+												<a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+														class="fas fa-user-times"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">5</th>
+											<td>Fuente de agua para Perros y Gatos</td>
+											<td>5</td>
+											<td>$12.000</td>
+											<td>
+												<a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+														class="fas fa-user-times"></i></a>
+											</td>
+										</tr>
+										<tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="form" role="tabpanel" aria-labelledby="form-tab">
+					<div class="card">
+						<div class="card-header">
+							<h4>User Information</h4>
+						</div>
+						<div class="card-body">
+							<form class="form" role="form" autocomplete="off">
+								<div class="form-group row">
+									<label class="col-lg-3 col-form-label form-control-label">Cod Producto</label>
+									<div class="col-lg-9">
+										<input class="form-control" type="text">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-3 col-form-label form-control-label">Nombre</label>
+									<div class="col-lg-9">
+										<input class="form-control" type="text">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-3 col-form-label form-control-label">Stock</label>
+									<div class="col-lg-9">
+										<input class="form-control" type="email">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-3 col-form-label form-control-label">Precio</label>
+									<div class="col-lg-9">
+										<input class="form-control" type="text">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-lg-12 text-center">
+										<input type="reset" class="btn btn-secondary" value="Cancelar">
+										<input type="button" class="btn btn-primary" value="Guardar Cambios">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

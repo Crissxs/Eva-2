@@ -1,0 +1,132 @@
+* {
+    font-family: 'Patrick Hand', cursive;
+    padding: 0;
+    margin: 0;
+}
+#search{
+    display: flex;
+    justify-content: right;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5%;
+  }
+  #search input{
+    display: flex;
+    width: 400px;
+    font-size: 20px;
+    overflow: hidden;
+  }
+  
+hr {
+    border-top: 0px;
+    border-bottom: 1px solid black;
+}
+#separador{
+    border-top: 0px;
+    border-bottom: 1px solid black;
+    margin: 0;
+    opacity: 1;
+}
+
+#cuerpo{
+    display: flex;
+    height:900px;
+    background:linear-gradient(to bottom, #87eabf 0%, #4a9dc1 100%);
+}
+
+#header {
+    height: 58px;
+    display: flex;
+    transition-duration: 0.5s;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+
+#header>a {
+    flex-flow: row;
+}
+
+#logo {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#menu>a {
+    margin-left: 40px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding-bottom: 17px;
+
+}
+#barrita {
+    border-bottom: #FFC12E solid;
+}
+#menu>a:hover {
+    border-bottom: cyan solid;
+}
+
+#redes {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.red {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+.red>a{
+    color: black;
+    text-decoration: none;
+}
+.red:hover {
+    background:linear-gradient(to right, #9cd7f0 0%, #b1fada 100%);
+    transition-duration: 0.5s;
+}
+
+#productos {    
+    justify-content: center;
+    align-items:flex-start;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#Codigo {
+margin-top: 40px;
+}
+
+#PrecioProducto {
+    margin-top: 40px;
+
+}
+
+#DescripcionDeProducto {
+    margin-top: 40px;
+}
+
+#Clase {
+    margin-top: 40px;
+}
+
+#Cantidad {
+    margin-top: 40px;
+}
+
+#subirimagen {
+    margin-top: 10px;
+}
+
+#botones {
+    margin-top: 10px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
